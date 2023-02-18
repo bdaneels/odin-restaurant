@@ -1,8 +1,19 @@
+let pizzaObject = {
+    Margerita: "Mozerella, Tomatosauce", 
+    Calzoné: "Niet zomaar een gewoné",
+    Salame: "Mozerella, Tomatosauce, Salami Slices",
+    Bolognese: "Mozerella, Tomatosauce, Minced Meat", 
 
+
+
+}
 
 
 function populateMenu () {
-
+    function createDiv() {
+        let div = document.createElement('div')
+        return div
+    }
     let previousMenu = document.querySelector('#menu-card')
     if (previousMenu) {previousMenu.remove()}
 
@@ -20,10 +31,29 @@ function populateMenu () {
 
     
     /* margerita */
-    let pizzaCard = document.createElement('div')
+    function pizzaCards(object) {
+        for( let pizza in pizzaObject) {
+            let pizzaDiv = document.createElement('div')
+            pizzaDiv.setAttribute('id', 'pizza-div')
+            let pizzaTitle = document.createElement('h3')
+            pizzaTitle.textContent = pizza.toString()
+            let pizzaIngredients = document.createElement('div')
+            pizzaIngredients.textContent = pizzaObject[pizza]
+            
+            pizzaDiv.appendChild(createDiv())
+            pizzaDiv.appendChild(pizzaTitle)
+            pizzaDiv.appendChild(pizzaIngredients)
+            pizzaDiv.appendChild(createDiv())
+            object.appendChild(pizzaDiv)
+
+        }
+    }
+    
+
     
     menuCard.appendChild(pizzaTitle)
     menuCard.appendChild(pizzaContainer)
+    pizzaCards(pizzaContainer)
 
     
 
