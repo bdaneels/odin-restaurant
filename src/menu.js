@@ -12,8 +12,20 @@ function populateMenu () {
     startDiv.innerHTML = ""
     
     let pizzaTitle = document.createElement('h2')
+    pizzaTitle.setAttribute('id', 'menu-title')
     pizzaTitle.textContent = "Pizze"
+    
+    let pizzaContainer = document.createElement('div')
+    pizzaContainer.setAttribute('id', 'pizza-container')
 
+    
+    /* margerita */
+    let pizzaCard = document.createElement('div')
+    
+    menuCard.appendChild(pizzaTitle)
+    menuCard.appendChild(pizzaContainer)
+
+    
 
     startDiv.appendChild(menuCard)
 

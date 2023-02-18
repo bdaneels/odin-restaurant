@@ -8,11 +8,11 @@
 }
 
 #header{
-    @apply flex justify-center items-center bg-black bg-opacity-50 text-red-600 text-2xl space-x-6
+    @apply flex justify-center items-center bg-black bg-opacity-50 text-white text-2xl space-x-12
 }
 
 #headerbutton{
-    @apply hover:text-white
+    @apply hover:text-orange-300
 }
 
 #hero-container{
@@ -32,5 +32,9 @@
 }
 
 #menu-card {
-    @apply bg-white max-w-6xl rounded-xl bg-opacity-70 shadow-xl grid grid-cols-2
+    @apply bg-white max-w-6xl rounded-xl bg-opacity-70 shadow-xl flex flex-col items-center justify-between space-y-16
+}
+
+#pizza-container {
+    @apply grid grid-cols-3 items-center gap-4
 }
