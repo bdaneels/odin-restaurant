@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#content{
+    background: url('./pizza-bg.jpg') no-repeat;
+    background-size:cover;
+}
+
+#header{
+    @apply flex justify-center items-center bg-black bg-opacity-50 text-red-600 text-2xl space-x-6
+}
+
+#headerbutton{
+    @apply hover:text-white
+}
+
+#hero-container{
+    @apply flex flex-col items-center bg-black bg-opacity-40 pt-20 h-screen
+}
+
+#restaurant-title{
+    @apply text-white text-4xl uppercase tracking-widest mb-16
+}
+
+#subtitle{
+    @apply text-white text-2xl uppercase tracking-wide border-t border-b border-white mb-28
+}
+
+#hero-text-container{
+    @apply text-white text-xl uppercase text-center bg-white bg-opacity-10 tracking-wide 
+}
+
+#menu-card {
+    @apply bg-white max-w-6xl rounded-xl bg-opacity-70 shadow-xl grid grid-cols-2
+}
