@@ -3,6 +3,8 @@ let pizzaObject = {
     Calzoné: "Niet zomaar een gewoné",
     Salame: "Mozerella, Tomatosauce, Salami Slices",
     Bolognese: "Mozerella, Tomatosauce, Minced Meat", 
+    Salmone: "Niet te verwarren met de Salame",
+    Daneels: "Traditional pizza meets a kapsalon"
 
 
 

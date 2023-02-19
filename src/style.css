@@ -32,19 +32,19 @@
 }
 
 #menu-card {
-    @apply bg-white max-w-6xl rounded-xl bg-opacity-70 shadow-xl flex flex-col items-center justify-between space-y-16
+    @apply bg-white max-w-6xl rounded-xl bg-opacity-70 shadow-xl flex flex-col items-center justify-between space-y-16 py-10
 }
+
 
 #pizza-container {
     @apply grid grid-cols-3 items-center gap-4 auto-rows-auto px-6
 }
 
 #pizza-div{
-    @apply border-black border-t-2 border-b-2 py-4 flex flex-col items-center space-y-4
+    @apply py-4 flex flex-col items-center space-y-4 h-32
 }
 
-#pizza-div{
- 
+#pizza-div div:first-child,
+#pizza-div div:last-child{
+    @apply  border-black border-t-2 w-6/12
 }
-
-/* first and list child opzeoeken om de border te verkleinen zodat her fancy schmansy uitziet */
