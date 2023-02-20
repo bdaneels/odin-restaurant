@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-#content{
+.content{
     background: url('./pizza-bg.jpg') no-repeat;
+    background-size:cover;
+}
+
+.menu{
+    background: url('./menu-bg.jpg') no-repeat;
     background-size:cover;
 }
 
@@ -20,7 +25,7 @@
 }
 
 #restaurant-title{
-    @apply text-white text-4xl uppercase tracking-widest mb-16
+    @apply text-white text-4xl uppercase tracking-widest mb-16 md:mb-32
 }
 
 #subtitle{
@@ -28,7 +33,7 @@
 }
 
 #hero-text-container{
-    @apply text-white text-xl uppercase text-center bg-white bg-opacity-10 tracking-wide 
+    @apply text-white text-xl uppercase text-center bg-white bg-opacity-10 tracking-wide mt-24 md:mt-48
 }
 
 #menu-card {
@@ -37,7 +42,7 @@
 
 
 #pizza-container {
-    @apply grid grid-cols-3 items-center gap-4 auto-rows-auto px-6
+    @apply grid md:grid-cols-3 items-center gap-4 auto-rows-auto px-6 grid-cols-1
 }
 
 #pizza-div{
@@ -47,4 +52,8 @@
 #pizza-div div:first-child,
 #pizza-div div:last-child{
     @apply  border-black border-t-2 w-6/12
+}
+
+#about-card{
+    @apply bg-white rounded-xl bg-opacity-70 shadow-xl flex flex-col items-center justify-between space-y-16 py-10
 }

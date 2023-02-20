@@ -5,9 +5,6 @@ let pizzaObject = {
     Bolognese: "Mozerella, Tomatosauce, Minced Meat", 
     Salmone: "Niet te verwarren met de Salame",
     Daneels: "Traditional pizza meets a kapsalon"
-
-
-
 }
 
 
@@ -60,6 +57,10 @@ function populateMenu () {
     
 
     startDiv.appendChild(menuCard)
+
+    let contentDiv = document.querySelector('#content')
+    contentDiv.classList.remove('content')
+    contentDiv.classList.add('menu')
 
 }
 

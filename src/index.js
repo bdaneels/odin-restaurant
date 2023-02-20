@@ -1,6 +1,7 @@
 import CreateMethodProperty from 'es-abstract/2015/CreateMethodProperty';
 import './style.css';
 import {populateMenu} from './menu'
+import {populateAbout} from './about'
 
 let body = document.querySelector('body')
 
@@ -13,7 +14,8 @@ class frontPage {
     createbg() {
     let startDiv = document.createElement('div')
     startDiv.setAttribute('id', 'content')
-    startDiv.classList.add('h-screen', 'w-screen', 'flex', 'flex-col')
+    startDiv.classList.add('h-screen', 'w-screen', 'flex', 'flex-col',)
+    startDiv.classList.remove('menu')
     body.appendChild(startDiv)
     }
     targetStartDiv () {
@@ -37,6 +39,8 @@ class frontPage {
 
     menuButton.addEventListener('click', () => populateMenu(), false)
     homeButton.addEventListener('click', () => frontpage.createHero(), false)
+    aboutButton.addEventListener('click', () => populateAbout(), false)
+
 
     headerDiv.appendChild(homeButton)
     headerDiv.appendChild(menuButton)
@@ -51,6 +55,8 @@ class frontPage {
     if(previousHero) {previousHero.remove()}
     let heroContainer = document.createElement('div');
     heroContainer.setAttribute('id', 'hero-container');
+    startDiv.classList.remove('menu')
+    startDiv.classList.add('content')
 
     let restaurantTitle = document.createElement('h2');
     restaurantTitle.setAttribute('id', 'restaurant-title');
